@@ -73,6 +73,7 @@ This document describes how to build a relatively useless eclipse plug-in. The p
 1. Import the following packages:
     - `org.eclipse.jface.viewers.*`
     - `org.eclipse.jdt.core.*`
+
     and add the collowing code to the class:
     ```java
     //This method converts a Selection to an object
