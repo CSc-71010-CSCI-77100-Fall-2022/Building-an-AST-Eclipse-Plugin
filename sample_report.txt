@@ -1,0 +1,71 @@
+Project Name: gattMath
+
+Project URL: http://gattmath.sourceforge.net
+
+Project Description: gattMath is an open source education tool used to demonstrate the concepts of integrals and differential calculus using 2D and 3D images. The application maps integration algorithms and their geometric, or graphical, representation while allowing the user to interact with the models. The project is implemented in java and supports English, French, and Portuguese interfaces.
+
+Number of classes: 52
+
+Measurements produced by the plug-in:
+	number of user-defined methods: 355
+	method calls/class:
+		Ajuda: 31
+		AreaGrafica: 0
+		CalcularF: 77
+		DarbouxIntegral: 60
+		Derivada: 77
+		EsquemaCores: 0
+		Formatador: 2
+		Funcao: 20
+		GattMath (main): 8
+		Grafico3DJPanel: 29
+		IntegralJPanel: 65
+		IntegralWindow: 26
+		Intercomunicador: 0
+		LabelMsg: 8
+		MenuBar: 278
+		MonteCarloAEIntegral: 27
+		MonteCarloMIntegral: 21
+		OpcoesJPanel: 186
+		Plotter: 0
+		Plotter2D: 84
+		Plotter3D: 67
+		ResRead: 2
+		RiemannIntegral: 42
+		SimpsonIntegral: 44
+		Sobre: 47
+		TabPanel: 44
+		TabsPanelObserver: 5
+		TrapezioIntegral: 42
+		utils.CopiarClip: 6
+		utils.ExampleFileFilter: 24
+		utils.ImageSelection: 2
+		utils.SaveJPEG: 10
+		edu.hws.jcm.data.Cases: 1
+		edu.hws.jcm.data.ConditionalExpression: 24
+		edu.hws.jcm.data.Constant: 7
+		edu.hws.jcm.data.Expression: 0
+		edu.hws.jcm.data.ExpressionCommand: 0
+		edu.hws.jcm.data.ExpressionProgram: 338
+		edu.hws.jcm.data.Function: 0
+		edu.hws.jcm.data.MathObject: 0
+		edu.hws.jcm.data.NumUtils: 48
+		edu.hws.jcm.data.ParseError: 1
+		edu.hws.jcm.data.Parser: 155
+		edu.hws.jcm.data.ParserContext: 79
+		edu.hws.jcm.data.ParserExtension: 0
+		edu.hws.jcm.data.SimpleFunction: 9
+		edu.hws.jcm.data.StackOfDouble: 1
+		edu.hws.jcm.data.StandardFunction: 3
+		edu.hws.jcm.data.SymbolTable: 7
+		edu.hws.jcm.data.Value: 0
+		edu.hws.jcm.data.ValueMath: 6
+		edu.hws.jcm.data.Variable: 5
+
+		Total:	2018
+		Min:	0
+		Max:	338
+		Mean:	38.80769231
+		Stdev:	66.7112709
+		Mode:	0
+		Median:	9.5
