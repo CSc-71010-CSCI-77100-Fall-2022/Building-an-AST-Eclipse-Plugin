@@ -132,7 +132,7 @@ This document describes how to build a relatively useless eclipse plug-in. The p
 
 1. Under "Testing," select "Launch an Eclipse Application." This should open a new eclipse window with a clean workspace. If you would like to load a different workspace (like one that already has projects), you can close the new Eclipse instance, right-click the "Project Explorer" in the original instance, and select Run As -> Run Configurations.... You can change the "Workspace Data" location field to point to your desired workspace. You may also wish to change arguments, such as VM arguments that would increase your program's memory. For example, you can select the "Arguments" tab and enter -Xmx8g in the "VM Arguments" field to set your maximum heap size 8GB of RAM.
 
-1. In the newly opened instance of Eclipse, use the "Package Explorer" frame, browse to a user-defined method. In this same frame, right-click on a method and select the Source -> Traverse AST option.
+1. In the newly opened instance of Eclipse, use the "Project Explorer" frame, browse to a user-defined method. In this same frame, right-click on a method and select the Source -> Traverse AST option.
 
 [eclipse]: https://www.eclipse.org/downloads/packages/eclipse-rcp-and-rap-developers/oxygenr
 [installer]: https://www.eclipse.org/downloads/
