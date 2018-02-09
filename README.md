@@ -97,32 +97,32 @@ This document describes how to build a relatively useless eclipse plug-in. The p
     ```
 
 1. Delete the current `execute()` method and replace it with:
-```java
-@Override
-public Object execute(ExecutionEvent event) throws ExecutionException {
-    IWorkbenchWindow window = HandlerUtil.getActiveWorkbenchWindowChecked(event);
+    ```java
+    @Override
+    public Object execute(ExecutionEvent event) throws ExecutionException {
+        IWorkbenchWindow window = HandlerUtil.getActiveWorkbenchWindowChecked(event);
 
-    // Get the IMethod that this action was invoked on
-    IStructuredSelection selection = HandlerUtil.getCurrentStructuredSelection(event);
+        // Get the IMethod that this action was invoked on
+        IStructuredSelection selection = HandlerUtil.getCurrentStructuredSelection(event);
 
-    // Get the IMethod that this action was invoked on
-    Object element = getSingleElement(selection);
-    IMethod method = getSelectedMethod(element);
+        // Get the IMethod that this action was invoked on
+        Object element = getSingleElement(selection);
+        IMethod method = getSelectedMethod(element);
 
-    // Get the info on the method
-    InfoGatherer ig = new InfoGatherer();
+        // Get the info on the method
+        InfoGatherer ig = new InfoGatherer();
 
-    int x = ig.getNumberOfUserMethods();
-    int y = ig.getNumberOfMethodCalls(method);
+        int x = ig.getNumberOfUserMethods();
+        int y = ig.getNumberOfMethodCalls(method);
 
-    MessageDialog.openInformation(window.getShell(), "ASTTrav Plug-in",
-            "The number of user defined methods = " + x + ". There were " + y + " method calls made from "
-                    + method.getCompilationUnit().getElementName() + " which is the declaring class of "
-                    + method.getElementName() + ", the method you selected.");
+        MessageDialog.openInformation(window.getShell(), "ASTTrav Plug-in",
+                "The number of user defined methods = " + x + ". There were " + y + " method calls made from "
+                        + method.getCompilationUnit().getElementName() + " which is the declaring class of "
+                        + method.getElementName() + ", the method you selected.");
 
-    return null;
-}
-```
+        return null;
+    }
+    ```
 
 ## Testing Your Newly Created Plug-in
 
