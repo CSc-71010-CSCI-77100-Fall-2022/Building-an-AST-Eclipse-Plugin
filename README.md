@@ -61,7 +61,7 @@ This document describes how to build a relatively useless eclipse plug-in. The p
     1. For the newly created "with" element, on the right Extension Element Details pane, set a value of "or" for the operator field and a value of "false" for the ifEmpty field.
 
     1. Right-click "iterate" and select New -> instanceof. Here, we'll specify the type of the element in the Java Model for which our command will apply. On the right, change the "value" field value to "org.eclipse.jdt.core.IMethod". This means that our command will apply to Java methods. 
-    
+
 1. Now select the "Dependencies" tab at the bottom of the main window pane. Add "org.eclipse.jdt.core", "org.eclipse.core.resources", and "org.eclipse.core.runtime" to the "Required Plug-ins" list if they are not already there.
 
 1. Save all of this by either pressing CTRL-S or selecting File -> Save from the toolbar menu.
