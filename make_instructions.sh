@@ -1,3 +1,3 @@
 #!/bin/bash
-pandoc README.md -o instructions.html -f markdown_github --css pandoc.css
+pandoc -s README.md -o instructions.html -f gfm --css pandoc.css
 xdg-open instructions.html
