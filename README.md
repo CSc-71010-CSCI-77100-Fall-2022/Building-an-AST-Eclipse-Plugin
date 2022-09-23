@@ -8,7 +8,7 @@ This document describes how to build a relatively useless eclipse plug-in. The p
 
 ## Building AST Traverse Plug-in
 
-1. If you haven't done so already, download Eclipse. There are different configurations of Eclipse available; I recommend [Eclipse for RCP and RAP Developers][eclipse]. There's also an [installer][installer] you can use but be sure to pick the RCP and RAP developer package. If you already have Eclipse and want to use that installation, you may need to install additional plug-ins.
+1. If you haven't done so already, download Eclipse. There are different configurations of Eclipse available; I recommend [Eclipse for RCP and RAP Developers][eclipse] (choose the **latest** version). There's also an [installer][installer] you can use but be sure to pick the RCP and RAP developer package. If you already have Eclipse and want to use that installation, you may need to install additional plug-ins.
 
 1. Open Eclipse.
 
@@ -134,5 +134,5 @@ This document describes how to build a relatively useless eclipse plug-in. The p
 
 1. In the newly opened instance of Eclipse, use the "Project Explorer" frame, browse to a user-defined method. In this same frame, right-click on a method and select the Source -> Traverse AST option.
 
-[eclipse]: https://www.eclipse.org/downloads/packages/eclipse-rcp-and-rap-developers/oxygenr
+[eclipse]: https://www.eclipse.org/downloads/packages/release/2022-09/r/eclipse-ide-rcp-and-rap-developers
 [installer]: https://www.eclipse.org/downloads/
