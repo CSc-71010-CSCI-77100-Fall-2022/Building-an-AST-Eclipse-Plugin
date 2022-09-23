@@ -1,3 +1,3 @@
 #!/bin/bash
-pandoc -s README.md -o instructions.html -f gfm --css pandoc.css
+pandoc --shift-heading-level-by=-1 -s README.md -o instructions.html -f gfm --css pandoc.css
 xdg-open instructions.html

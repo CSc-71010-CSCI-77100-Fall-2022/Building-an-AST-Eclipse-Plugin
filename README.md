@@ -1,4 +1,4 @@
-# Building-an-AST-Eclipse-Plugin
+# Building an AST Eclipse Plugin
 
 ## Introduction
 
