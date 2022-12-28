@@ -134,5 +134,9 @@ This document describes how to build a relatively useless eclipse plug-in. The p
 
 1. In the newly opened instance of Eclipse, use the "Project Explorer" frame, browse to a user-defined method. In this same frame, right-click on a method and select the Source -> Traverse AST option.
 
+## Credits
+
+This assignment is based on an assignment by Jason Sawin and Atanas Rountev.
+
 [eclipse]: https://www.eclipse.org/downloads/packages/release/2022-09/r/eclipse-ide-rcp-and-rap-developers
 [installer]: https://www.eclipse.org/downloads/
