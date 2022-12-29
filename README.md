@@ -41,26 +41,26 @@ This document describes how to build a relatively useless eclipse plug-in. The p
 1. In the "Project Explorer" pane, open `asttrav.handlers.ASTTravHandler.java`. The source code should be in the main window pane.
 1. Import the `org.eclipse.jface.viewers.*` and `org.eclipse.jdt.core.*`packages.
 1. Add the following code to the class:
-	```java
-	//This method converts a Selection to an object
-	public static Object getSingleElement(ISelection s) {
-		if (!(s instanceof IStructuredSelection))
-			return null;
-		IStructuredSelection selection = (IStructuredSelection) s;
-		if (selection.size() != 1)
-			return null;
-		return selection.getFirstElement();
-	}
+    ```java
+    //This method converts a Selection to an object
+    public static Object getSingleElement(ISelection s) {
+        if (!(s instanceof IStructuredSelection))
+            return null;
+        IStructuredSelection selection = (IStructuredSelection) s;
+        if (selection.size() != 1)
+            return null;
+        return selection.getFirstElement();
+    }
 
-	//Converts an object to an IMethod
-	private static IMethod getSelectedMethod(Object element) {
-		IMethod method = null;
-		if (element instanceof IMethod) {
-			method = (IMethod) element;
-		}
-		return method;
-	}
-	```
+    //Converts an object to an IMethod
+    private static IMethod getSelectedMethod(Object element) {
+        IMethod method = null;
+        if (element instanceof IMethod) {
+            method = (IMethod) element;
+        }
+        return method;
+    }
+    ```
 
 1. Delete the current `execute()` method and replace it with:
     ```java
