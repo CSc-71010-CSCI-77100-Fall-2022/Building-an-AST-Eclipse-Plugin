@@ -43,26 +43,26 @@ This document describes how to build a relatively useless eclipse plug-in. The p
     - `org.eclipse.jface.viewers.*`
     - `org.eclipse.jdt.core.*`
     and add the collowing code to the class:
-    ```java
-    //This method converts a Selection to an object
-    public static Object getSingleElement(ISelection s) {
-        if (!(s instanceof IStructuredSelection))
-            return null;
-        IStructuredSelection selection = (IStructuredSelection) s;
-        if (selection.size() != 1)
-            return null;
-        return selection.getFirstElement();
-    }
+	```java
+	//This method converts a Selection to an object
+	public static Object getSingleElement(ISelection s) {
+		if (!(s instanceof IStructuredSelection))
+			return null;
+		IStructuredSelection selection = (IStructuredSelection) s;
+		if (selection.size() != 1)
+			return null;
+		return selection.getFirstElement();
+	}
 
-    //Converts an object to an IMethod
-    private static IMethod getSelectedMethod(Object element) {
-        IMethod method = null;
-        if (element instanceof IMethod) {
-            method = (IMethod) element;
-        }
-        return method;
-    }
-    ```
+	//Converts an object to an IMethod
+	private static IMethod getSelectedMethod(Object element) {
+		IMethod method = null;
+		if (element instanceof IMethod) {
+			method = (IMethod) element;
+		}
+		return method;
+	}
+	```
 
 1. Delete the current `execute()` method and replace it with:
     ```java
