@@ -69,7 +69,8 @@ This document describes how to build a relatively useless eclipse plug-in. The p
         IWorkbenchWindow window = HandlerUtil.getActiveWorkbenchWindowChecked(event);
 
         // Get the IMethod that this action was invoked on
-        IStructuredSelection selection = HandlerUtil.getCurrentStructuredSelection(event);
+        IStructuredSelection selection =
+            HandlerUtil.getCurrentStructuredSelection(event);
 
         // Get the IMethod that this action was invoked on
         Object element = getSingleElement(selection);
@@ -82,9 +83,9 @@ This document describes how to build a relatively useless eclipse plug-in. The p
         int y = ig.getNumberOfMethodCalls(method);
 
         MessageDialog.openInformation(window.getShell(), "ASTTrav Plug-in",
-                "The number of user defined methods = " + x + ". There were " + y + " method calls made from "
-                        + method.getCompilationUnit().getElementName() + " which is the declaring class of "
-                        + method.getElementName() + ", the method you selected.");
+            "The number of user defined methods = " + x + ". There were " + y + " method calls made from "
+                + method.getCompilationUnit().getElementName() + " which is the declaring class of "
+                + method.getElementName() + ", the method you selected.");
 
         return null;
     }
