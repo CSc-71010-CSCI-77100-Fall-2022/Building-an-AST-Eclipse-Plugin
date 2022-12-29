@@ -39,10 +39,8 @@ This document describes how to build a relatively useless eclipse plug-in. The p
 1. Save all of this by either pressing CTRL-S or selecting File -> Save from the toolbar menu.
 1. Add the included `MyVisitor.java` file and the `InfoGatherer.java` file to the `asttrav.handlers` package (this can be done by creating new classes of the same name and coping the code or copying the files right clicking on the package in the "Project Explorer" pane and selecting paste.) **NOTE**: These files are heavily commented and should be reviewed carefully.
 1. In the "Project Explorer" pane, open `asttrav.handlers.ASTTravHandler.java`. The source code should be in the main window pane.
-1. Import the following packages:
-    - `org.eclipse.jface.viewers.*`
-    - `org.eclipse.jdt.core.*`
-    and add the collowing code to the class:
+1. Import the `org.eclipse.jface.viewers.*` and `org.eclipse.jdt.core.*`packages.
+1. Add the following code to the class:
 	```java
 	//This method converts a Selection to an object
 	public static Object getSingleElement(ISelection s) {
